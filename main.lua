@@ -15,21 +15,16 @@ count = 1
 return words
 end
 
-
-
 function printValues(words,list)
 	
 	for i,word in ipairs(words) do
-	print(list.a[word],word)
+	
+ print(string.format("%-20s %s",word,list.a[word]))
 	end
 end
 
 list = WordList
-
 parse("text.txt",list)
-
 words = getWords(list.a)
-
 qs(words)
-
 printValues(words,list)
