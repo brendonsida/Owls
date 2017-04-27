@@ -15,25 +15,12 @@ count = 1
 return words
 end
 
-function printList(list)
 
-	for k, v in pairs(list) do
-	print(k,v)
-	end
-	
-end
-
-function printSorted(list)
-
-	for i,word in ipairs(list) do
-	print(i,word)
-	end
-end
 
 function printValues(words,list)
 	
 	for i,word in ipairs(words) do
-	print(word,list.a[word])
+	print(list.a[word],word)
 	end
 end
 
